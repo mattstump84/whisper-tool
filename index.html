@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,3 +49,55 @@
 
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Whisper Tool</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>What’s stirring in your heart today?</h1>
+    <textarea id="seekerInput" placeholder="Type your question, longing, or ache..."></textarea>
+    <label for="toneSlider">Choose your tone:</label>
+    <input type="range" id="toneSlider" min="0" max="3" value="0" />
+    <span id="toneLabel">Gentle</span>
+    <button onclick="getWhisper()">Receive a Whisper</button>
+    <div id="whisperOutput"></div>
+
+    <div id="whisperBack">
+      <h2>Whisper Back</h2>
+      <textarea id="seekerReply" placeholder="What stirred in you? What would you whisper back?"></textarea>
+      <button onclick="submitWhisperBack()">Send Whisper</button>
+      <p id="replyConfirmation" style="color: green;"></p>
+    </div>
+
+    <button onclick="toggleDashboard()">View Whisper Dashboard</button>
+    <div id="mentorDashboard" style="display: none;">
+      <h2>Mentor Dashboard</h2>
+      <ul id="replyList"></ul>
+      <button onclick="exportWhispers()">Download Whispers</button>
+      <input type="file" id="restoreFile" accept=".json" />
+      <button onclick="restoreWhispers()">Restore Whispers</button>
+      <button onclick="clearReplies()">Clear All Replies</button>
+    </div>
+
+
+  </div>
+  <script src="script.js"></script>
+
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("sw.js")
+      .then(() => console.log("Service Worker registered"))
+      .catch(err => console.error("Service Worker error:", err));
+  }
+</script>
+
+</body>
+</html>
+>>>>>>> 091ada70bbc877fe5dc93ccbe290452efc803e6c

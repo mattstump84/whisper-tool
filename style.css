@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   font-family: 'Georgia', serif;
   background-color: #fdf6f0;
@@ -40,3 +41,47 @@ button {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+=======
+body {
+  font-family: 'Georgia', serif;
+  background-color: #fdf6f0;
+  color: #333;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #8e7cc3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#whisperOutput {
+  margin-top: 2rem;
+  font-style: italic;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+>>>>>>> 091ada70bbc877fe5dc93ccbe290452efc803e6c
