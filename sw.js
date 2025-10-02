@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 self.addEventListener("install", event => {
   event.waitUntil(
     caches.open("whisper-cache").then(cache => {
@@ -20,7 +19,7 @@ self.addEventListener("fetch", event => {
     })
   );
 });
-=======
+
 self.addEventListener("install", event => {
   event.waitUntil(
     caches.open("whisper-cache").then(cache => {
@@ -42,4 +41,3 @@ self.addEventListener("fetch", event => {
     })
   );
 });
->>>>>>> 091ada70bbc877fe5dc93ccbe290452efc803e6c
